@@ -22,7 +22,9 @@ $$
 
 - restrict z to unit circle $z = e^{i\theta}$ - obtain fourier series of function $g(\theta) = f(e^{i\theta})$
 
-#+BEGIN_QUOTE
+- https://math.stackexchange.com/questions/7301/connection-between-fourier-transform-and-taylor-series
+-
+  #+BEGIN_QUOTE
 https://math.stackexchange.com/a/7380
 There is an analogy, more direct for fourier series. Both Fourier series and Taylor series are decompositions of a function f(x), which is represented as a linear combination of a (countable) set of functions. The function is then fully specified by a sequence of coefficients, instead of by its values f(x) for each x. In this sense, both can be called a transform f(x)↔{a0,a1,...}
 

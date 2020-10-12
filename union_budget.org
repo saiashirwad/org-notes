@@ -1,0 +1,20 @@
+#+TITLE: Union Budget
+#+FILETAGS: :india:politics:government:
+
+
+* main
+- annual financial statement
+- statement of estimated receipts and expenditure of govt for a particular year
+- account of govt's finances for [[file:fiscal_year.org][fiscal year]] from 1st April to 31st march.
+
+* classification
+** Revenue Budget
+- govt's revenue reciepts and expenditure
+- revenue receipts -> tax and non tax
+- revenue expenditure -> expenditure incurred in day to day functioning of govt on services offered to citizens
+- if revenue expenditure > revenue receipts -> revenue deficit
+
+** Capital Budget
+- capital receipts and payments of govt
+- loans from public, foreign govts + RBI => major part of CB
+- 

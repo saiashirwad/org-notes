@@ -1,0 +1,73 @@
+% Created 2020-10-12 Mon 08:57
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Sai Ashirwad R}
+\date{\today}
+\title{Taylor vs Fourier}
+\hypersetup{
+ pdfauthor={Sai Ashirwad R},
+ pdftitle={Taylor vs Fourier},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\href{http://dev.ipol.im/\~coco/website/taylorfourier.html\#:\~:text=When\%20x\%20and\%20\%CE\%B8\%20are,a\%20sum\%20of\%20sinusoidal\%20waves.}{Taylor and fourier are the same}
+
+\begin{itemize}
+\item taylor series
+\end{itemize}
+$$
+f(x)=c_0+c_1x+c_2x^2+c_3x^3+\cdots
+$$
+
+\begin{itemize}
+\item Fourier series
+\end{itemize}
+$$
+g(\theta)=c_0+c_1\exp(i\theta)+c_2\exp(2i\theta)+c_3\exp(3i\theta)+\cdots
+$$
+
+
+\begin{itemize}
+\item they are the same thing in complex numbers
+\end{itemize}
+$$
+f(z)=c_0+c_1z+c_2z^2+c_3z^3+\cdots
+$$
+
+\begin{itemize}
+\item restrict z to real axis, i.e. z = x, obtain Taylor series of f
+
+\item restrict z to unit circle \(z = e^{i\theta}\) - obtain fourier series of function \(g(\theta) = f(e^{i\theta})\)
+
+\item \url{https://math.stackexchange.com/questions/7301/connection-between-fourier-transform-and-taylor-series}
+\item \begin{quote}
+\url{https://math.stackexchange.com/a/7380}
+There is an analogy, more direct for fourier series. Both Fourier series and Taylor series are decompositions of a function f(x), which is represented as a linear combination of a (countable) set of functions. The function is then fully specified by a sequence of coefficients, instead of by its values f(x) for each x. In this sense, both can be called a transform f(x)↔\{a0,a1,\ldots{}\}
+
+For the Taylor series (around 0, for simplicity), the set of functions is \{1,x,x2,x3\ldots{}\}. For the Fourier series is \{1,sin(ωx),cos(ωx),sin(2ωx),cos(2ωx)\ldots{}\}.
+
+Actually the Fourier series is one the many transformations that uses an orthonomal basis of functions. It is shown that, in that case, the coefficients are obtained by ``projecting'' f(x) onto each basis function, which amounts to an inner product, which (in the real scalar case) amounts to an integral. This implies that the coefficients depends on a global property of the function (over the full ``period'' of the function).
+
+The Taylor series (which does not use a orthonormal basis) is conceptually very different, in that the coeffients depends only in local properties of the function, i.e., its behaviour in a neighbourhood (its derivatives).
+\end{quote}
+\end{itemize}
+\end{document}
