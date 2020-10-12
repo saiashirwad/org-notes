@@ -1,0 +1,18 @@
+#+TITLE: Jacobian
+
+* intro
+- matrix of first order partial derivatives
+
+$$f: \mathbf{R}^n -> R^m$$
+- each of its first order partial derivaties $\in \mathbf{R^n}$
+- input $x \in \mathbf{R^n}$
+- output $f(x) \in \mathbf{R^m}$
+- Jacobian matrix of f defined as mxn matrix and
+  $$ J_{ij} = \frac{\partial f_i}{\partial x_i}$$
+
+  # $$ \mathbf{J} = \[\]$$
+* Jacobian Matrix
+- generalizes gradient of scalar valued fn in several variables - generalizes derivative of a scalar valued function of a single variable
+- at each differentiable point - jacobian matrix
+  + describes amount of stretching, rotating, transforming imposed by function locally at point
+  + if function differentiable at a point - differential given in coordinates by Jacobian

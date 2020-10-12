@@ -1,0 +1,6 @@
+#+TITLE: Taylor series
+
+- can be used to approximate a function f(x)
+  $$f(x) = \frac{f(c)}{0!}(x-c)^0 + \frac{f'(c)}{1!}(x-c)^1 + ...$$
+- working directly with f(x) may be difficult - taylor expansion may be easier
+- [[file:taylor_vs_fourier.org][Taylor vs Fourier]]

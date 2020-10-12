@@ -1,0 +1,28 @@
+#+TITLE: Elisp
+
+
+#+begin_src elisp
+#+end_src
+
+#+RESULTS:
+: 32
+
+
+
+#+begin_src elisp
+(set 'some-list '(1 2 3))
+(setq my-list '(foo bar baz))
+#+end_src
+
+#+RESULTS:
+| 1 | 2 | 3 |
+
+
+#+begin_src elisp
+(let ((a 1)
+      (b 7))
+  (+ a b))
+#+end_src
+
+#+RESULTS:
+: 8

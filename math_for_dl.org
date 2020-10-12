@@ -1,0 +1,4 @@
+#+TITLE: Math for Deep Learning
+
+
+[[explained.ai/matrix-calculus][The matrix calculus you need for deep learning]]

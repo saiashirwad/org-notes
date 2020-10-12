@@ -1,0 +1,144 @@
+% Created 2020-10-07 Wed 09:49
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usetheme{default}
+\author{Sai Ashirwad R}
+\date{\today}
+\title{Org Mode Introduction}
+\hypersetup{
+ pdfauthor={Sai Ashirwad R},
+ pdftitle={Org Mode Introduction},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\begin{frame}[label={sec:orga13d259},fragile]{Org Mode}
+ \begin{block}{useful functions}
+\begin{block}{insert link <space> m l l}
+\end{block}
+\end{block}
+\begin{block}{TODO}
+\begin{block}{org roam}
+\end{block}
+\end{block}
+\begin{block}{markup}
+\alert{bold}
+\emph{italic}
+\texttt{verbatim}
+\sout{strikethrough}
+\begin{block}{new list}
+\begin{itemize}
+\item bulleted list
+\item another
+\item \href{new.org}{new}
+\end{itemize}
+-\href{https://www.spacemacs.org/layers/+emacs/org/README.html\#element-insertion}{spacemacs org}
+Links:\href{https://en.wikipedia.org/wiki/emacs}{emacs}
+
+\href{new.org}{new}
+\end{block}
+\end{block}
+\begin{block}{tables}
+\begin{center}
+\begin{tabular}{llll}
+some & data & mean & meaner\\
+\hline
+lol & new &  & \\
+ &  &  & \\
+ & format &  & \\
+ &  &  & \\
+\end{tabular}
+\end{center}
+\end{block}
+\begin{block}{export to formats}
+C-c C-e
+\end{block}
+\begin{block}{source code}
+\begin{itemize}
+\item \alert{shortcut}: <s <tab>
+\item execute: C-c C-c
+\end{itemize}
+\begin{verbatim}
+import os
+a = os.listdir(".")
+return a
+\end{verbatim}
+
+\href{new.org}{new}
+\begin{verbatim}
+(setq my-list '(foo bar baz))
+\end{verbatim}
+\end{block}
+
+\begin{block}{\LaTeX{}}
+\begin{itemize}
+\item characters \(\alpha\) \(\rightarrow\)
+\item $$\frac{1}{\alpha \beta}$$
+\item align
+\begin{align*}
+  a = 34 + 34 + k jf34 \alpha \\
+  b = 343
+\end{align*}
+\end{itemize}
+\end{block}
+\begin{block}{Literate Programming}
+\end{block}
+
+\begin{block}{links}
+\begin{itemize}
+\item \href{https://harryrschwartz.com/2014/04/08/an-introduction-to-emacs-lisp.html}{introduction to emacs lisp}
+\item 
+\end{itemize}
+\end{block}
+\begin{block}{Todo \href{stuff.org}{stuff}}
+\begin{block}{\url{random.org}}
+\end{block}
+\begin{block}{cycle}
+\begin{itemize}
+\item lol
+\item lolol
+\href{table.org}{table}
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{lrr}
+Student & Maths & Physics\\
+\hline
+Bertrand & 13 & 09\\
+Henri & 15 & 14\\
+Arnold & 17 & 13\\
+\end{tabular}
+\end{center}
+
+
+\href{(+ 2 2)}{2 + 2}
+
+\href{org-agenda}{agenda}
+
+
+\href{ls}{list files}
+
+[\url{Febe4lUK5G4}][custom link types org mode]]
+\end{block}
+\end{block}
+\begin{block}{code files}
+\href{file:///home/sai/code/elisp/new.el}{new elisp file}
+\end{block}
+\end{frame}
+\end{document}

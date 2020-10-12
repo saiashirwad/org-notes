@@ -1,0 +1,7 @@
+#+TITLE: Bayesian
+
+* Resources
+** books
+- [[https://camdavidsonpilon.github.io/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/][Probabilistic Programming and Bayesian Methods for Hackers]]
+** articles
+- [[https://medium.com/@rrfd/bayesian-analysis-for-traffic-patterns-480e71a680ab][Bayesian Analysis for Traffic Patterns]]

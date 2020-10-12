@@ -1,0 +1,20 @@
+#+TITLE: Second Brain
+
+
+* Building a Second Brain
+- course by Tiago Forte
+- creating a reliable system - storing, organizing, digesting, transforming information -> Good Creative Output
+- mental distance between system grows small
+- closed feedback loop - cybernetic system
+** Organizing for Insight
+- *PARA* system
+  1. Projects
+     - specific deadline or endpoint
+  2. Areas
+     - continuous areas of commitment
+  3. Resources
+  4. Archive
+
+
+* References
+- https://maggieappleton.com/basb

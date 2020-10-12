@@ -1,0 +1,88 @@
+#+TITLE: Org Mode Introduction
+#+OPTIONS: toc:nil
+* Org Mode
+** TODO
+*** org roam
+** source code
+- execute: C-c C-c
+- *shortcut*: <s <tab>
+#+begin_src python
+import os
+a = os.listdir(".")
+return a
+#+end_src
+
+#+RESULTS:
+[[file:new.org][new]]
+
+#+begin_src elisp
+(setq my-list '(foo bar baz))
+#+end_src
+#+RESULTS:
+| foo | bar | baz |
+
+** useful functions
+*** insert link <space> m l l
+** export to formats
+C-c C-e
+** LaTeX
+- characters \alpha \rightarrow
+- $$\frac{1}{\alpha \beta}$$
+- align
+  \begin{align*}
+    a = 34 + 34 + k jf34 \alpha \\
+    b = 343
+  \end{align*}
+** tables
+| some |   mean | meaner | data |
+|------+--------+--------+------|
+|   34 |    432 |    254 |  342 |
+|   34 | 342342 | 342342 |   34 |
+|  342 |    423 |    342 | 3423 |
+|  342 |   4234 |    543 | 4324 |
+| 4234 |   4253 | 432352 | 3423 |
+| 4324 |   2342 |    423 |  432 |
+
+** Literate Programming
+** markup
+*bold*
+=verbatim=
+/italic/
++strikethrough+
+DEADLINE: <2020-10-06 Tue>
+*** new list
+- bulleted list
+- another
+- [[file:new.org][new]]
+-[[https://www.spacemacs.org/layers/+emacs/org/README.html#element-insertion][spacemacs org]]
+Links:[[wikipedia:emacs][emacs]]
+
+[[file:new.org][new]]
+** code files
+[[file:~/code/elisp/new.el][new elisp file]]
+** links
+-
+- [[https://harryrschwartz.com/2014/04/08/an-introduction-to-emacs-lisp.html][introduction to emacs lisp]]
+** Todo [[file:stuff.org][stuff]]
+*** DONE [[file:random.org]]
+DEADLINE: <2020-11-28 Sat>
+*** DONE cycle
+- lol
+- lolol
+  [[file:table.org][table]]
+
+| Student  | Maths | Physics |
+|----------+-------+---------|
+| Bertrand |    13 |      09 |
+| Henri    |    15 |      14 |
+| Arnold   |    17 |      13 |
+
+
+[[elisp:org-agenda][agenda]]
+
+[[shell:ls][list files]]
+
+
+ [yt:Febe4lUK5G4][custom link types org mode]]
+
+[[elisp:(+ 2 2)][2 + 2]]

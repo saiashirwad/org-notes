@@ -1,0 +1,39 @@
+#+OPTIONS: toc:nil H:10 tex:t
+#+STARTUP: hidestars indent
+#+INCLUDE: personal-info.org
+#+LaTeX_HEADER: \usepackage{myresume}
+#+LaTeX_HEA DER: \hypersetup{hidelinks}
+#+LaTeX_CLASS_OPTIONS: [letterpaper]
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+
+#+LaTeX_HEADER: \usepackage{paralist}
+#+LaTeX_HEADER: \let\itemize\compactitem
+
+# Palatino
+#+LaTeX_HEADER: \usepackage[T1]{fontenc}
+#+LaTeX_HEADER: \usepackage{mathpazo}
+#+LaTeX_HEADER: \linespread{1.05}
+#+LaTeX_HEADER: \usepackage[scaled]{helvet}
+#+LaTeX_HEADER: \usepackage{courier}
+
+{{{HEADER}}}
+
+
+* Education
+** *Birla Institute of Technology and Science, Pilani*
+*** 2018-20
+ME Software Systems
+** *SRM University, Chennai*
+*** 2013-17
+BTech Software Engineering
+* Technical Skills
+** Most comfortable with
+Python, PyTorch, C++, Javascript
+** Have worked with
+Go, Tensorflow, Keras, Java, Spring Boot
+
+
+* Projects
+** Knowledge Graph Completion

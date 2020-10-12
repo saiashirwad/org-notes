@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Org Mode Introduction</title>
+<meta name="author" content="Sai Ashirwad R"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/home/sai/.emacs.d/.local/straight/build/revealjs/dist/reveal.css"/>
+
+<link rel="stylesheet" href="/home/sai/.emacs.d/.local/straight/build/revealjs/dist/theme/black.css" id="theme"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="http://taopeng.me/org-notes-style/css/notes.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Org Mode Introduction</h1><h2 class="author">Sai Ashirwad R</h2><p class="date">Created: 2020-10-07 Wed 09:49</p>
+</section>
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1</span> Org Mode</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1</span> useful functions</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+</section>
+<section id="slide-1-1-1">
+<h4 id="1-1-1"><span class="section-number-4">1.1.1</span> insert link &lt;space&gt; m l l</h4>
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2</span> TODO</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+</section>
+<section id="slide-1-2-1">
+<h4 id="1-2-1"><span class="section-number-4">1.2.1</span> org roam</h4>
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3</span> markup</h3>
+<p>
+<b>bold</b>
+<i>italic</i>
+<code>verbatim</code>
+<del>strikethrough</del>
+</p>
+</section>
+<section id="slide-1-3-1">
+<h4 id="1-3-1"><span class="section-number-4">1.3.1</span> new list</h4>
+<ul>
+<li>bulleted list</li>
+<li>another</li>
+<li><a href="new.html">new</a></li>
+
+</ul>
+<p>
+-<a href="https://www.spacemacs.org/layers/+emacs/org/README.html#element-insertion">spacemacs org</a>
+Links:<a href="https://en.wikipedia.org/wiki/emacs">emacs</a>
+</p>
+
+<p>
+<a href="new.html">new</a>
+</p>
+</section>
+<section id="slide-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4</span> tables</h3>
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+
+<col  class="org-left">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">some</th>
+<th scope="col" class="org-left">data</th>
+<th scope="col" class="org-left">mean</th>
+<th scope="col" class="org-left">meaner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">lol</td>
+<td class="org-left">new</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">format</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-1-5">
+<h3 id="1-5"><span class="section-number-3">1.5</span> export to formats</h3>
+<p>
+C-c C-e
+</p>
+</section>
+<section id="slide-1-6">
+<h3 id="1-6"><span class="section-number-3">1.6</span> source code</h3>
+<ul>
+<li><b>shortcut</b>: &lt;s &lt;tab&gt;</li>
+<li>execute: C-c C-c</li>
+
+</ul>
+<div class="org-src-container">
+
+<pre  class="src src-python"><span style="color: #fb4934;">import</span> os
+<span style="color: #8ec07c;">a</span> = os.listdir(<span style="color: #b8bb26;">"."</span>)
+<span style="color: #fb4934;">return</span> a
+</pre>
+</div>
+
+<p>
+<a href="new.html">new</a>
+</p>
+<div class="org-src-container">
+
+<pre  class="src src-elisp"><span style="color: #fb4934;">(</span><span style="color: #fb4934;">setq</span> my-list <span style="color: #8ec07c;">'</span><span style="color: #fabd2f;">(</span>foo bar baz<span style="color: #fabd2f;">)</span><span style="color: #fb4934;">)</span>
+</pre>
+</div>
+
+</section>
+<section id="slide-1-7">
+<h3 id="1-7"><span class="section-number-3">1.7</span> LaTeX</h3>
+<ul>
+<li>characters &alpha; &rarr;</li>
+<li>\[\frac{1}{\alpha \beta}\]</li>
+<li><p>
+align
+</p>
+<div>
+\begin{align*}
+  a = 34 + 34 + k jf34 \alpha \\
+  b = 343
+\end{align*}
+
+</div></li>
+
+</ul>
+</section>
+<section id="slide-1-8">
+<h3 id="1-8"><span class="section-number-3">1.8</span> Literate Programming</h3>
+
+</section>
+<section id="slide-1-9">
+<h3 id="1-9"><span class="section-number-3">1.9</span> links</h3>
+<ul>
+<li><a href="https://harryrschwartz.com/2014/04/08/an-introduction-to-emacs-lisp.html">introduction to emacs lisp</a></li>
+<li></li>
+
+</ul>
+</section>
+<section id="slide-1-10">
+<h3 id="1-10"><span class="section-number-3">1.10</span> Todo <a href="stuff.html">stuff</a></h3>
+<div class="outline-text-3" id="text-1-10">
+</div>
+</section>
+<section id="slide-1-10-1">
+<h4 id="1-10-1"><span class="section-number-4">1.10.1</span> <span class="done DONE">DONE</span> <a href="random.html">random.html</a></h4>
+</section>
+<section id="slide-1-10-2">
+<h4 id="1-10-2"><span class="section-number-4">1.10.2</span> <span class="done DONE">DONE</span> cycle</h4>
+<ul>
+<li>lol</li>
+<li>lolol
+<a href="table.html">table</a></li>
+
+</ul>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left">
+
+<col  class="org-right">
+
+<col  class="org-right">
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Student</th>
+<th scope="col" class="org-right">Maths</th>
+<th scope="col" class="org-right">Physics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bertrand</td>
+<td class="org-right">13</td>
+<td class="org-right">09</td>
+</tr>
+
+<tr>
+<td class="org-left">Henri</td>
+<td class="org-right">15</td>
+<td class="org-right">14</td>
+</tr>
+
+<tr>
+<td class="org-left">Arnold</td>
+<td class="org-right">17</td>
+<td class="org-right">13</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>
+<a href="(+ 2 2)">2 + 2</a>
+</p>
+
+<p>
+<a href="org-agenda">agenda</a>
+</p>
+
+
+<p>
+<a href="ls">list files</a>
+</p>
+
+<p>
+[<a href="Febe4lUK5G4">Febe4lUK5G4</a>][custom link types org mode]]
+</p>
+</section>
+<section id="slide-1-11">
+<h3 id="1-11"><span class="section-number-3">1.11</span> code files</h3>
+<p>
+<a href="file:///home/sai/code/elisp/new.el">new elisp file</a>
+</p>
+</section>
+</section>
+</div>
+</div>
+<script src="/home/sai/.emacs.d/.local/straight/build/revealjs/dist/reveal.js"></script>
+<script src="/home/sai/.emacs.d/.local/straight/build/revealjs/plugin/markdown/markdown.js"></script>
+<script src="/home/sai/.emacs.d/.local/straight/build/revealjs/plugin/notes/notes.js"></script>
+<script src="/home/sai/.emacs.d/.local/straight/build/revealjs/plugin/search/search.js"></script>
+<script src="/home/sai/.emacs.d/.local/straight/build/revealjs/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+
+overview: true,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>

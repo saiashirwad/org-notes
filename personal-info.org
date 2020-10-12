@@ -1,0 +1,9 @@
+#+MACRO: FIRST    Sai Ashirwad
+#+MACRO: LAST     R
+#+MACRO: FULL     {{{FIRST}}} {{{LAST}}}
+# #+MACRO: BLOG     www.andrewmichaeldavis.com
+#+MACRO: EMAIL    saiashirwadr@gmail.com
+# #+MACRO: CODE     reconmaster
+
+# #+MACRO: HEADER \resheader{ {{{FULL}}} }{ {{{BLOG}}} }{ {{{EMAIL}}} }{ {{{CODE}}} }}
+#+MACRO: HEADER \resheader{ {{{FULL}}} }{ {{{EMAIL}}} }

@@ -1,0 +1,9 @@
+#+TITLE: Neural Net Jacobian
+
+$$y = f(x)$$
+- Jacobian matrix of f contains partial derivatives of each element of y wrt each element of x
+- tells how local perturbations in nn would impact output
+  + how modifying each input dimension would impact output classes
+
+[[file:Jacobian.org][Jacobian]]
+
