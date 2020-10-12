@@ -1,0 +1,41 @@
+#+TITLE: Read_everyday
+#+FILETAGS: :interview:prep:
+
+Books:
+[[file:~/cracking.pdf][Cracking The Coding Interview]]
+
+* About Prep
+** Practice implementing on paper -> then computer
+** implement every single DS and algorithm on [[file:prep.org]]
+* Other
+** interviews are SUPPOSED to be difficult
+** During interview
+*** listen carefully
+- ask questions
+- write down pertinent information
+*** draw example
+- specific example - not general
+- sufficiently large
+- not special case
+*** state brute force
+- should not let interviewer think you are struggling to see even the easy solution
+- explain space and time complexity
+- starting point for optimization
+- helps wrap head around problem
+*** Optimize
+- look for unused information
+- fresh example
+- time vs space tradeoff
+- precompute information
+- hash table
+*** walkthrough
+- solidify understanding before writing
+- make sure code is as close to perfect in the beginning as possible
+-
+*** Implement
+- write beautiful code
+  + modularized
+  + error checks
+  + good variable names
+*** Test
+-
