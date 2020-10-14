@@ -1,4 +1,5 @@
 #+TITLE: Taylor vs Fourier
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
 
 [[http://dev.ipol.im/~coco/website/taylorfourier.html#:~:text=When%20x%20and%20%CE%B8%20are,a%20sum%20of%20sinusoidal%20waves.][Taylor and fourier are the same]]
 

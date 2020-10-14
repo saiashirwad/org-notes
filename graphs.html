@@ -6,7 +6,7 @@
 <!-- 2020-10-13 Tue 22:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Taylor vs Fourier</title>
+<title>Graphs</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Sai Ashirwad R" />
 <style type="text/css">
@@ -216,89 +216,100 @@
     /*]]>*///-->
 // @license-end
 </script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        displayAlign: "center",
-        displayIndent: "0em",
-
-        "HTML-CSS": { scale: 100,
-                        linebreaks: { automatic: "false" },
-                        webFont: "TeX"
-                       },
-        SVG: {scale: 100,
-              linebreaks: { automatic: "false" },
-              font: "TeX"},
-        NativeMML: {scale: 100},
-        TeX: { equationNumbers: {autoNumber: "AMS"},
-               MultLineWidth: "85%",
-               TagSide: "right",
-               TagIndent: ".8em"
-             }
-});
-</script>
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">Taylor vs Fourier</h1>
-<p>
-<a href="http://dev.ipol.im/~coco/website/taylorfourier.html#:~:text=When%20x%20and%20%CE%B8%20are,a%20sum%20of%20sinusoidal%20waves.">Taylor and fourier are the same</a>
-</p>
-
-<ul class="org-ul">
-<li>taylor series</li>
+<h1 class="title">Graphs</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org781a509">1. Strongly Connected Components</a>
+<ul>
+<li><a href="#orgf88626a">1.1. Kosaraju&rsquo;s Algorithm</a>
+<ul>
+<li><a href="#orgfb4ac5d">1.1.1. Description</a></li>
+<li><a href="#org0ae4e2a">1.1.2. Datastructures:</a></li>
+<li><a href="#org353bb51">1.1.3. Method</a></li>
 </ul>
-<p>
-\[
-f(x)=c_0+c_1x+c_2x^2+c_3x^3+\cdots
-\]
-</p>
-
-<ul class="org-ul">
-<li>Fourier series</li>
+</li>
 </ul>
-<p>
-\[
-g(\theta)=c_0+c_1\exp(i\theta)+c_2\exp(2i\theta)+c_3\exp(3i\theta)+\cdots
-\]
-</p>
-
-
-<ul class="org-ul">
-<li>they are the same thing in complex numbers</li>
+</li>
 </ul>
-<p>
-\[
-f(z)=c_0+c_1z+c_2z^2+c_3z^3+\cdots
-\]
-</p>
+</div>
+</div>
 
+<div id="outline-container-org781a509" class="outline-2">
+<h2 id="org781a509"><span class="section-number-2">1</span> Strongly Connected Components</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgf88626a" class="outline-3">
+<h3 id="orgf88626a"><span class="section-number-3">1.1</span> Kosaraju&rsquo;s Algorithm</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<a href="file:///home/sai/prep/graphs/scc.cpp">Code C++</a>
+<img src="./images/screenshot-01.png" alt="screenshot-01.png" />
+</p>
+</div>
+<div id="outline-container-orgfb4ac5d" class="outline-4">
+<h4 id="orgfb4ac5d"><span class="section-number-4">1.1.1</span> Description</h4>
+<div class="outline-text-4" id="text-1-1-1">
 <ul class="org-ul">
-<li>restrict z to real axis, i.e. z = x, obtain Taylor series of f</li>
-
-<li>restrict z to unit circle \(z = e^{i\theta}\) - obtain fourier series of function \(g(\theta) = f(e^{i\theta})\)</li>
-
-<li><a href="https://math.stackexchange.com/questions/7301/connection-between-fourier-transform-and-taylor-series">https://math.stackexchange.com/questions/7301/connection-between-fourier-transform-and-taylor-series</a></li>
-<li><blockquote>
-<p>
-<a href="https://math.stackexchange.com/a/7380">https://math.stackexchange.com/a/7380</a>
-There is an analogy, more direct for fourier series. Both Fourier series and Taylor series are decompositions of a function f(x), which is represented as a linear combination of a (countable) set of functions. The function is then fully specified by a sequence of coefficients, instead of by its values f(x) for each x. In this sense, both can be called a transform f(x)↔{a0,a1,&#x2026;}
-</p>
-
-<p>
-For the Taylor series (around 0, for simplicity), the set of functions is {1,x,x2,x3&#x2026;}. For the Fourier series is {1,sin(ωx),cos(ωx),sin(2ωx),cos(2ωx)&#x2026;}.
-</p>
-
-<p>
-Actually the Fourier series is one the many transformations that uses an orthonomal basis of functions. It is shown that, in that case, the coefficients are obtained by &ldquo;projecting&rdquo; f(x) onto each basis function, which amounts to an inner product, which (in the real scalar case) amounts to an integral. This implies that the coefficients depends on a global property of the function (over the full &ldquo;period&rdquo; of the function).
-</p>
-
-<p>
-The Taylor series (which does not use a orthonormal basis) is conceptually very different, in that the coeffients depends only in local properties of the function, i.e., its behaviour in a neighbourhood (its derivatives).
-</p>
-</blockquote></li>
+<li>find all strongly connected components in O(V+E)</li>
+<li>DFS two times
+<ul class="org-ul">
+<li>DFS of graph produces single tree if all vertices reachable from starting point</li>
+<li>else: forest</li>
+</ul></li>
+<li>may find tree or forest depending on where start
+<ul class="org-ul">
+<li>0, 1, 2 -&gt; tree</li>
+<li>3, 4 -&gt; forest</li>
+</ul></li>
+<li><b>finish time of a vertex that connects to other SCCs will always be greater than finish times of vertices in the other SCC</b>
+<img src="./images/screenshot-03.png" alt="screenshot-03.png" /></li>
 </ul>
+</div>
+</div>
+<div id="outline-container-org0ae4e2a" class="outline-4">
+<h4 id="org0ae4e2a"><span class="section-number-4">1.1.2</span> Datastructures:</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<ul class="org-ul">
+<li>stack s</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org353bb51" class="outline-4">
+<h4 id="org353bb51"><span class="section-number-4">1.1.3</span> Method</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org2c155af"></a>DFS traversal of graph<br />
+<div class="outline-text-5" id="text-1-1-3-1">
+<ul class="org-ul">
+<li>create empty stack S</li>
+<li>recursive DFS traversal for adjacent vertices of vertex -&gt; push vertex to stack</li>
+<li>starting from 0: 1, 2, 4, 3, 0</li>
+</ul>
+</div>
+</li>
+<li><a id="org484b244"></a>Reverse directions of all arcs -&gt; transpose graph<br /></li>
+<li><a id="orgb5fbe0a"></a>DFS on transpose graph<br />
+<div class="outline-text-5" id="text-1-1-3-3">
+<ul class="org-ul">
+<li>while S is not empty
+<ul class="org-ul">
+<li>pop vertex v from S</li>
+<li>take v as source -&gt; DFSUtil()</li>
+<li>DFS from v -&gt; strongly connected components of v</li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Sai Ashirwad R</p>

@@ -1,0 +1,88 @@
+% Created 2020-10-13 Tue 22:03
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Sai Ashirwad R}
+\date{\today}
+\title{Graphs}
+\hypersetup{
+ pdfauthor={Sai Ashirwad R},
+ pdftitle={Graphs},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.3 (Org mode 9.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{Strongly Connected Components}
+\label{sec:orge1582db}
+\subsection{Kosaraju's Algorithm}
+\label{sec:org9f670f4}
+\href{file:///home/sai/prep/graphs/scc.cpp}{Code C++}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/screenshot-01.png}
+\end{center}
+\subsubsection{Description}
+\label{sec:orgc7dacdc}
+\begin{itemize}
+\item find all strongly connected components in O(V+E)
+\item DFS two times
+\begin{itemize}
+\item DFS of graph produces single tree if all vertices reachable from starting point
+\item else: forest
+\end{itemize}
+\item may find tree or forest depending on where start
+\begin{itemize}
+\item 0, 1, 2 -> tree
+\item 3, 4 -> forest
+\end{itemize}
+\item \textbf{finish time of a vertex that connects to other SCCs will always be greater than finish times of vertices in the other SCC}
+\begin{center}
+\includegraphics[width=.9\linewidth]{./images/screenshot-03.png}
+\end{center}
+\end{itemize}
+\subsubsection{Datastructures:}
+\label{sec:org46d7cf2}
+\begin{itemize}
+\item stack s
+\end{itemize}
+\subsubsection{Method}
+\label{sec:org22ecb52}
+\begin{enumerate}
+\item DFS traversal of graph
+\label{sec:orgc3394e9}
+\begin{itemize}
+\item create empty stack S
+\item recursive DFS traversal for adjacent vertices of vertex -> push vertex to stack
+\item starting from 0: 1, 2, 4, 3, 0
+\end{itemize}
+\item Reverse directions of all arcs -> transpose graph
+\label{sec:orge9fe046}
+\item DFS on transpose graph
+\label{sec:orgc4467d2}
+\begin{itemize}
+\item while S is not empty
+\begin{itemize}
+\item pop vertex v from S
+\item take v as source -> DFSUtil()
+\item DFS from v -> strongly connected components of v
+\end{itemize}
+\end{itemize}
+\end{enumerate}
+\end{document}

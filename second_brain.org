@@ -4,7 +4,7 @@
 * Building a Second Brain
 - course by Tiago Forte
 - creating a reliable system - storing, organizing, digesting, transforming information -> Good Creative Output
-- mental distance between system grows small
+- mental [[file:distance.org][distance]] between system grows small
 - closed feedback loop - cybernetic system
 ** Organizing for Insight
 - *PARA* system

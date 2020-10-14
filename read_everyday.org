@@ -38,4 +38,8 @@ Books:
   + error checks
   + good variable names
 *** Test
--
+- usually: take earlier example and test -> might discover bugs but is slow
+- conceptual test -> read and analyze each line
+- hot spots -> base cases in recursive code, integer division, null nodes in binary trees
+- small test cases
+- special cases

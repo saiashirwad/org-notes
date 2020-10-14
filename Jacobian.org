@@ -17,3 +17,5 @@ $$f: \mathbf{R}^n -> R^m$$
 - at each differentiable point - jacobian matrix
   + describes amount of stretching, rotating, transforming imposed by function locally at point
   + if function differentiable at a point - differential given in coordinates by Jacobian
+
+[[file:./images/screenshot-04.png]]i

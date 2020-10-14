@@ -1,7 +1,7 @@
 #+TITLE: Org Mode Introduction
 #+OPTIONS: toc:nil
 * Org Mode
-** TODO
+** TODO lol
 *** org roam
 ** source code
 - execute: C-c C-c
@@ -12,8 +12,9 @@ a = os.listdir(".")
 return a
 #+end_src
 
+
 #+RESULTS:
-[[file:new.org][new]]
+| notes.org | myresume.sty |                    | binary_search.org | brain | today.org | fiscal_year.org | .orgids | .git | org-roam.db | resume.log | stuff.org | nn_jacobian.org | new.org | taylor_vs_fourier.tex | taylor_vs_fourier.html | resume.pdf | distance.org | second_brain.org | .auctex-auto | notes.pdf | jacobian.html | second_brain.html | taylor_vs_fourier.pdf | taylor_series.org | taylor_vs_fourier.org | elisp.org | bayesian.org | prep.org | notes.tex | resume.org | jacobian.pdf | jacobian.org | rajya_sabha.org | notes.html | roam | cover_letter.org | bfs.org | quick_sort.org | personal-info.org | dfs.org | union_budget.org | resume.tex | math_for_dl.org | read_everyday.org |
 
 #+begin_src elisp
 (setq my-list '(foo bar baz))
@@ -36,28 +37,14 @@ C-c C-e
 ** tables
 | some |   mean | meaner | data |
 |------+--------+--------+------|
-|   34 |    432 |    254 |  342 |
-|   34 | 342342 | 342342 |   34 |
-|  342 |    423 |    342 | 3423 |
 |  342 |   4234 |    543 | 4324 |
+|   34 | 342342 | 342342 |   34 |
+|   34 |    432 |    254 |  342 |
+|  342 |    423 |    342 | 3423 |
 | 4234 |   4253 | 432352 | 3423 |
 | 4324 |   2342 |    423 |  432 |
 
 ** Literate Programming
-** markup
-*bold*
-=verbatim=
-/italic/
-+strikethrough+
-DEADLINE: <2020-10-06 Tue>
-*** new list
-- bulleted list
-- another
-- [[file:new.org][new]]
--[[https://www.spacemacs.org/layers/+emacs/org/README.html#element-insertion][spacemacs org]]
-Links:[[wikipedia:emacs][emacs]]
-
-[[file:new.org][new]]
 ** code files
 [[file:~/code/elisp/new.el][new elisp file]]
 ** links
@@ -86,3 +73,18 @@ DEADLINE: <2020-11-28 Sat>
  [yt:Febe4lUK5G4][custom link types org mode]]
 
 [[elisp:(+ 2 2)][2 + 2]]
+** markup
+*bold*
+=verbatim=
+/italic/
++strikethrough+
+DEADLINE: <2020-10-06 Tue>
+*** new list
+- bulleted list
+- another
+- [[file:new.org][new]]
+-[[https://www.spacemacs.org/layers/+emacs/org/README.html#element-insertion][spacemacs org]]
+Links:[[wikipedia:emacs][emacs]]
+
+[[file:new.org][new]]
+* Inbox

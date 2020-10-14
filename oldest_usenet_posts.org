@@ -1,0 +1,31 @@
+* [[https://www.vice.com/en/article/pky7km/usenet-archive-utzoo-online][2.1 Million of the Oldest Internet Posts Are Now Online for Anyone to Read]] :website:
+[2020-10-14 Wed 09:03]
+
+** Article
+
+Decades before Twitter threads, Reddit forums, or Facebook groups, there was Usenet: an early-internet, pre-Web discussion system where one could start and join conversations much like today's message boards. Launched in 1980, Usenet is the creation of two Duke University students who wanted to communicate between decentralized, local servers---and it's still active today.
+
+On Usenet, people talk about everything, from nanotech science to soap operas, wine, and UFOs. [[https://www.joe0.com/2020/10/07/converting-utzoo-wiseman-netnews-archive-to-postgresql-using-python-3-8/][Jozef Jarosciak]], a systems architect based in Ontario, had his first encounter with Usenet in 2000, when he found a full-time job in Canada thanks to a job posting there. 
+
+This week, Jarosciak [[https://www.reddit.com/r/DataHoarder/comments/j7ea4x/datahoarders_usenetarchivescom_now_includes/][uploaded]] some of the oldest Usenet posts available to the internet. Around 2.1 million posts from  between February 1981 and June 1991 from Henry Spencer's UTZOO NetNews Archive are archived at the [[https://www.usenetarchives.com/groups.php?c=utzoo&p=0][Usenet Archive]] for anyone to browse. 
+
+This latest archive-dump is part of an even larger project by Jarosciak. He [[https://www.reddit.com/r/DataHoarder/comments/in7rd8/the_usenet_text_archive_goes_online_300_gigs/][launched the Usenet Archive]] site last month, as a way to host groups in a way that'd be independent of Google Groups, which also holds archives of newsgroups like Usenet. It's currently archiving 317 million posts in 10,000 unique Usenet newsgroups, according to the site---and Jarosciak estimates it'll eventually hold close to 1 billion posts.
+
+[[/en/section/tech][Tech]]
+
+*** [[/en/article/g5p7pj/the-internet-archive-has-a-new-tool-to-save-research-papers-from-vanishing][The Internet Archive Has a New Tool to Save Research Papers From Vanishing]]
+
+
+Samantha Cole
+
+09.17.20
+
+[[https://www.vice.com/en/article/g5p7pj/the-internet-archive-has-a-new-tool-to-save-research-papers-from-vanishing][]]
+
+Henry Spencer from the University of Toronto, Department of Zoology was keeping archives of the groups on 141 magnetic tapes. "UTZOO-Wiseman Usenet Tapes are essentially the earliest available discussions posted to the Internet by people working at various Universities who were already connected to the Internet," Jarosciak told me. 
+
+Spencer and a few colleagues managed to transfer the magnetic tape data to .TAR (Tape ARchive) format, and Jarosciak, who's been a Usenet archivist for years, convert those tapes into a fully searchable PostgreSQL database, which he then uploaded to the Usenet Archives site. Along the way, in addition to the parsers for Utzoo magnetic tape archive, he created converters in PHP, JavaScript, Java, and Python, and made them available on [[https://github.com/JozefJarosciak?tab=repositories][his Github]] as open-source resources that anyone could use.
+
+From the Utzoo groups, he's uploaded nearly 26,300,000 posts and counting. 
+
+"This treasure trove of old posts needs to be available to future generations," Jarosciak said. "These hundreds of millions of posts can be fun to read, but more importantly, they shed light on the thinking process of the Internet community in the early stages of the internet itself. It is an enormous amount of important historical and research-related content. It would be neglect on my part and part of other archivists, to pass on the opportunity to bring these old Usenet text groups from archives back to the public."

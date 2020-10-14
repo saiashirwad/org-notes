@@ -1,0 +1,8 @@
+#+TITLE: Index
+
+
+* Org Mode :org:emacs:
+** Org Capture
+*** lol
+* Web Captures
+**

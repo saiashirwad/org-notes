@@ -1,0 +1,30 @@
+#+TITLE: Graphs
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://gongzhitaao.org/orgcss/org.css"/>
+
+* Strongly Connected Components
+** Kosaraju's Algorithm
+[[file:~/prep/graphs/scc.cpp][Code C++]]
+[[file:./images/screenshot-01.png]]
+*** Description
+- find all strongly connected components in O(V+E)
+- DFS two times
+  + DFS of graph produces single tree if all vertices reachable from starting point
+  + else: forest
+- may find tree or forest depending on where start
+  + 0, 1, 2 -> tree
+  + 3, 4 -> forest
+- *finish time of a vertex that connects to other SCCs will always be greater than finish times of vertices in the other SCC*
+ [[file:./images/screenshot-03.png]]
+*** Datastructures:
+- stack s
+*** Method
+**** DFS traversal of graph
+- create empty stack S
+- recursive DFS traversal for adjacent vertices of vertex -> push vertex to stack
+- starting from 0: 1, 2, 4, 3, 0
+**** Reverse directions of all arcs -> transpose graph
+**** DFS on transpose graph
+- while S is not empty
+  + pop vertex v from S
+  + take v as source -> DFSUtil()
+  + DFS from v -> strongly connected components of v
